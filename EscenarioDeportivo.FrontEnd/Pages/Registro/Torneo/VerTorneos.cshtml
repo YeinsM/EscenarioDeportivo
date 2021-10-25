@@ -1,0 +1,65 @@
+﻿@page
+@model EscenarioDeportivo.FrontEnd.Pages.VerTorneosModel
+@{
+    ViewData["Title"]="Torneos";
+}
+@if (TempData["mensajeCreado"] != null)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        @TempData["mensajeCreado"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+<div class="container">
+    <div class="row justify-content-center bg-light">
+        <div class="col-sm-6">
+            <h3>Torneos</h3>
+        </div>
+        <div class="col-sm-6">
+            <a class="btn btn-secondary" asp-page="CrearTorneo">Agregar</a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        @if (Model._listavistaTorneo.Count() > 0)
+        {
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <td>Id</td>
+                        <td>Nombre</td>
+                        <td>Categoria</td>
+                        <td>Fecha Inicial</td>
+                        <td>Fecha Final</td>
+                        <td>Tipo</td>
+                        <td>Municipio</td>
+                        <td>Qué desea hacer?</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var tor in Model._listavistaTorneo)
+                    {
+                        <tr>
+                            <td>@tor.Id</td>
+                            <td>@tor.Nombre</td>
+                            <td>@tor.Categoria</td>
+                            <td>@tor.FechaInicial</td>
+                            <td>@tor.FechaFinal</td>
+                            <td>@tor.Tipo</td>
+                            <td>@tor.NombreMunicipio</td>
+                            <td>
+                                <a class="btn btn-outline-info" asp-page="EditarTorneo" asp-route-id="@tor.Id">Editar</a>
+                                <a class="btn btn-outline-danger" asp-page="EliminarTorneo" asp-route-id="@tor.Id">Eliminar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p class="lead">No hay Torneos registrados!</p>
+        }
+    </div>
+</div>

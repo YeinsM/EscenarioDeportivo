@@ -1,0 +1,72 @@
+﻿@page
+@model EscenarioDeportivo.FrontEnd.Pages.CrearPatrocinadorModel
+@{
+    ViewData["Title"]="Crear Patrocinador";
+}
+
+<div class="row justify-content-center bg-light">
+    <div class="col-sm-12">
+        <h3>Crear Patrocinador</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <p class="text-warning">@ViewData["Mensaje"]</p>
+    </div>
+</div>
+<div class="form-horizontal">
+    <div class="row">
+        <div class="col-sm-10">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group row">
+                    <label asp-for="_patrocinador.Identificacion" class="col-sm-2 control-label"></label>
+                    <div class="col-sm-10">
+                        <input asp-for="_patrocinador.Identificacion" class="form-control" />
+                        <span asp-validation-for="_patrocinador.Identificacion" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="_patrocinador.Nombre" class="col-sm-2 control-label"> </label>
+                    <div class="col-sm-10">
+                        <input asp-for="_patrocinador.Nombre" class="form-control" />
+                        <span asp-validation-for="_patrocinador.Nombre" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="_patrocinador.TipoPersona" class="col-sm-2 control-label"> </label>
+                    <div class="col-sm-10">
+                        <select asp-for="_patrocinador.TipoPersona" class="form-control"
+                            asp-items="@Model.listaTipo">
+                            <option value="">Seleccionar el tipo</option>
+                        </select>
+                        <span asp-validation-for="_patrocinador.TipoPersona" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="_patrocinador.Direccion" class="col-sm-2 control-label"> </label>
+                    <div class="col-sm-10">
+                        <input asp-for="_patrocinador.Direccion" class="form-control" />
+                        <span asp-validation-for="_patrocinador.Direccion" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="_patrocinador.Telefono" class="col-sm-2 control-label"> </label>
+                    <div class="col-sm-10">
+                        <input asp-for="_patrocinador.Telefono" class="form-control" />
+                        <span asp-validation-for="_patrocinador.Telefono" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Crear" class="btn btn-secondary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+@{
+await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

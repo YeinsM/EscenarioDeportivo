@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\yeins\\Downloads\\Telegram Desktop\\EscenarioDeportivo\\EscenarioDeportivo\\EscenarioDeportivo.Persistencia\\EscenarioDeportivo.Persistencia.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\yeins\\Downloads\\Telegram Desktop\\EscenarioDeportivo\\EscenarioDeportivo\\EscenarioDeportivo.Dominio\\EscenarioDeportivo.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yeins\\Downloads\\Telegram Desktop\\EscenarioDeportivo\\EscenarioDeportivo\\EscenarioDeportivo.Dominio\\EscenarioDeportivo.Dominio.csproj",
+        "projectName": "EscenarioDeportivo.Dominio",
+        "projectPath": "C:\\Users\\yeins\\Downloads\\Telegram Desktop\\EscenarioDeportivo\\EscenarioDeportivo\\EscenarioDeportivo.Dominio\\EscenarioDeportivo.Dominio.csproj",
+        "packagesPath": "C:\\Users\\yeins\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yeins\\Downloads\\Telegram Desktop\\EscenarioDeportivo\\EscenarioDeportivo\\EscenarioDeportivo.Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yeins\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\yeins\\Downloads\\Telegram Desktop\\EscenarioDeportivo\\EscenarioDeportivo\\EscenarioDeportivo.Persistencia\\EscenarioDeportivo.Persistencia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yeins\\Downloads\\Telegram Desktop\\EscenarioDeportivo\\EscenarioDeportivo\\EscenarioDeportivo.Persistencia\\EscenarioDeportivo.Persistencia.csproj",
+        "projectName": "EscenarioDeportivo.Persistencia",
+        "projectPath": "C:\\Users\\yeins\\Downloads\\Telegram Desktop\\EscenarioDeportivo\\EscenarioDeportivo\\EscenarioDeportivo.Persistencia\\EscenarioDeportivo.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\yeins\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yeins\\Downloads\\Telegram Desktop\\EscenarioDeportivo\\EscenarioDeportivo\\EscenarioDeportivo.Persistencia\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yeins\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\yeins\\Downloads\\Telegram Desktop\\EscenarioDeportivo\\EscenarioDeportivo\\EscenarioDeportivo.Dominio\\EscenarioDeportivo.Dominio.csproj": {
+                "projectPath": "C:\\Users\\yeins\\Downloads\\Telegram Desktop\\EscenarioDeportivo\\EscenarioDeportivo\\EscenarioDeportivo.Dominio\\EscenarioDeportivo.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

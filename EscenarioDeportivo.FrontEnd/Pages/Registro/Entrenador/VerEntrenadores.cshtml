@@ -1,0 +1,63 @@
+﻿@page
+@model EscenarioDeportivo.FrontEnd.Pages.VerEntrenadoresModel
+@{
+    ViewData["Title"]="Entrenadores";
+}
+@if (TempData["mensajeCreado"] != null)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        @TempData["mensajeCreado"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+<div class="container">
+    <div class="row justify-content-center bg-light">
+        <div class="col-sm-6">
+            <h3>Entrenadores</h3>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        @if (Model._listaVistaEntrenador.Count() > 0)
+        {
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <td>Id</td>
+                        <td>Documento</td>
+                        <td>Nombres</td>
+                        <td>Apellidos</td>
+                        <td>Género</td>
+                        <td>Disciplina Deportiva</td>
+                        <td>Equipo</td>
+                        <td>Disciplina Equipo</td>
+                        <td>Qué desea hacer?</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var ent in Model._listaVistaEntrenador)
+                    {
+                        <tr>
+                            <td>@ent.Id</td>
+                            <td>@ent.Documento</td>
+                            <td>@ent.Nombres</td>
+                            <td>@ent.Apellidos</td>
+                            <td>@ent.Genero</td>
+                            <td>@ent.DisciplinaDeportiva</td>
+                            <td>@ent.NombreEquipo</td>
+                            <td>@ent.DisciplinaEquipo</td>
+                            <td>
+                                <a class="btn btn-outline-info" asp-page="EditarEntrenador" asp-route-docEntrenador="@ent.Documento">Editar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p class="lead">No hay Entrenadores registrados!</p>
+        }
+    </div>
+</div>

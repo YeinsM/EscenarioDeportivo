@@ -1,0 +1,120 @@
+﻿@page
+@model EscenarioDeportivo.FrontEnd.Pages.InscripcionTorneoModel
+@{
+    ViewData["Title"] = "Inscripciones";
+}
+@if (TempData["mensajeCreado"] != null)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        @TempData["mensajeCreado"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+<div class="form-horizontal">
+    <div class="row">
+        <div class="col-sm-10">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row justify-content-center bg-light">
+                    <div class="col-sm-12">
+                        <h3>Inscripcion de Equipos a Torneo</h3>
+                    </div>
+                </div>
+                <div class="row justify-content-center bg-light">
+                    <div class="col-sm-6">
+                        <div class="form-group row">
+                            <label asp-for="_torneoEquipo.TorneoId" class="col-sm-2 control-label">Torneos</label>
+                            <div class="col-sm-10">
+                                <select asp-for="_torneoEquipo.TorneoId" class="form-control">
+                                    <option value="">Seleccionar el torneo</option>
+                                    if (Model._listaTorneos != null)
+                                    {
+                                    @foreach (var tor in Model._listaTorneos)
+                                    {
+                                        <option value="@tor.Id">@tor.Nombre</option>
+                                    }
+                                    }
+                                </select>
+                                <span asp-validation-for="_torneoEquipo.TorneoId" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group row">
+                            <label asp-for="_torneoEquipo.EquipoId" class="col-sm-2 control-label">Equipos</label>
+                            <div class="col-sm-10">
+                                <select asp-for="_torneoEquipo.EquipoId" class="form-control">
+                                    <option value="">Seleccionar el equipo</option>
+                                    if (Model._listaEquipos != null)
+                                    {
+                                    @foreach (var equ in Model._listaEquipos)
+                                    {
+                                        <option value="@equ.Id">@equ.Nombre</option>
+                                    }
+                                    }
+                                </select>
+                                <span asp-validation-for="_torneoEquipo.EquipoId" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Asignar" class="btn btn-secondary" />
+                </div>
+                <div class="row justify-content-center bg-light">
+
+                </div>
+                <div class="row justify-content-center">
+                    @if (Model._listaVistaTorneoEquipo.Count() > 0)
+                    {
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <td>Id Torneo</td>
+                                    <td>Torneo</td>
+                                    <td>Tipo Torneo</td>
+                                    <td>Id Equipo</td>
+                                    <td>Equipo</td>
+                                    <td>Disciplina Equipo</td>
+                                    <td>Qué desea hacer?</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var torEqu in Model._listaVistaTorneoEquipo)
+                                {
+                                    <tr>
+                                        <td>@torEqu.TorneoId</td>
+                                        <td>@torEqu.TorneoNombre</td>
+                                        <td>@torEqu.TorneoTipo</td>
+                                        <td>@torEqu.EquipoId</td>
+                                        <td>@torEqu.EquipoNombre</td>
+                                        <td>@torEqu.EquipoDisciplina</td>
+                                        <td>
+                                            <a class="btn btn-outline-danger" asp-page="..\Cancelacion\CancelarInscripcion" 
+                                                asp-route-ETorneoId="@torEqu.TorneoId" 
+                                                asp-route-EEquipoId="@torEqu.EquipoId" 
+                                                asp-route-TNombre="@torEqu.TorneoNombre" 
+                                                asp-route-ENombre="@torEqu.EquipoNombre">Eliminar</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                    else
+                    {
+                        <p class="lead">No hay Inscripciones registradas!</p>
+                    }
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+@{
+await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

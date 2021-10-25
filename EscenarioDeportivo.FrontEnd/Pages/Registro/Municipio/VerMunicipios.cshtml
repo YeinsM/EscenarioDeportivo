@@ -1,0 +1,55 @@
+﻿@page
+@model EscenarioDeportivo.FrontEnd.Pages.VerMunicipiosModel
+@{
+    ViewData["Title"]="Municipios";
+}
+@if (TempData["mensajeCreado"] != null)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        @TempData["mensajeCreado"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+<div class="container">
+    <div class="row justify-content-center bg-light">
+        <div class="col-sm-6">
+            <h3>Municipios</h3>
+        </div>
+        <div class="col-sm-6">
+            <a class="btn btn-secondary" asp-page="CrearMunicipios">Agregar</a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        @if (Model.listaMunicipios.Count() > 0)
+        {
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <td>Id</td>
+                        <td>Nombre</td>
+                        <td>Qué desea hacer?</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var mun in Model.listaMunicipios)
+                    {
+                        <tr>
+                            <td>@mun.Id</td>
+                            <td>@mun.Nombre</td>
+                            <td>
+                                <a class="btn btn-outline-info" asp-page="EditarMunicipio" asp-route-id="@mun.Id">Editar</a>
+                                <a class="btn btn-outline-danger" asp-page="EliminarMunicipio" asp-route-id="@mun.Id">Eliminar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p class="lead">No hay Municipios registrados!</p>
+        }
+    </div>
+</div>

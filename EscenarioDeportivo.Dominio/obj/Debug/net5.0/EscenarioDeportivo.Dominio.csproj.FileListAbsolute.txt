@@ -1,0 +1,24 @@
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Dominio\bin\Debug\net5.0\EscenarioDeportivo.Dominio.deps.json
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Dominio\bin\Debug\net5.0\EscenarioDeportivo.Dominio.dll
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Dominio\bin\Debug\net5.0\ref\EscenarioDeportivo.Dominio.dll
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Dominio\bin\Debug\net5.0\EscenarioDeportivo.Dominio.pdb
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Dominio\obj\Debug\net5.0\EscenarioDeportivo.Dominio.csprojAssemblyReference.cache
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Dominio\obj\Debug\net5.0\EscenarioDeportivo.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Dominio\obj\Debug\net5.0\EscenarioDeportivo.Dominio.AssemblyInfoInputs.cache
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Dominio\obj\Debug\net5.0\EscenarioDeportivo.Dominio.AssemblyInfo.cs
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Dominio\obj\Debug\net5.0\EscenarioDeportivo.Dominio.csproj.CoreCompileInputs.cache
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Dominio\obj\Debug\net5.0\EscenarioDeportivo.Dominio.dll
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Dominio\obj\Debug\net5.0\ref\EscenarioDeportivo.Dominio.dll
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Dominio\obj\Debug\net5.0\EscenarioDeportivo.Dominio.pdb
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Dominio\bin\Debug\net5.0\EscenarioDeportivo.Dominio.deps.json
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Dominio\bin\Debug\net5.0\EscenarioDeportivo.Dominio.dll
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Dominio\bin\Debug\net5.0\ref\EscenarioDeportivo.Dominio.dll
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Dominio\bin\Debug\net5.0\EscenarioDeportivo.Dominio.pdb
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Dominio\obj\Debug\net5.0\EscenarioDeportivo.Dominio.csproj.AssemblyReference.cache
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Dominio\obj\Debug\net5.0\EscenarioDeportivo.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Dominio\obj\Debug\net5.0\EscenarioDeportivo.Dominio.AssemblyInfoInputs.cache
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Dominio\obj\Debug\net5.0\EscenarioDeportivo.Dominio.AssemblyInfo.cs
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Dominio\obj\Debug\net5.0\EscenarioDeportivo.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Dominio\obj\Debug\net5.0\EscenarioDeportivo.Dominio.dll
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Dominio\obj\Debug\net5.0\ref\EscenarioDeportivo.Dominio.dll
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Dominio\obj\Debug\net5.0\EscenarioDeportivo.Dominio.pdb

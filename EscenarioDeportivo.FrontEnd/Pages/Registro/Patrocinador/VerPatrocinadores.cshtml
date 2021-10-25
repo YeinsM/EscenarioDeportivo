@@ -1,0 +1,61 @@
+﻿@page
+@model EscenarioDeportivo.FrontEnd.Pages.VerPatrocinadoresModel
+@{
+    ViewData["Title"]="Patrocinadores";
+}
+@if (TempData["mensajeCreado"] != null)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        @TempData["mensajeCreado"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+<div class="container">
+    <div class="row justify-content-center bg-light">
+        <div class="col-sm-6">
+            <h3>Patrocinadores</h3>
+        </div>
+        <div class="col-sm-6">
+            <a class="btn btn-secondary" asp-page="CrearPatrocinador">Agregar</a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        @if (Model.listaPatrocinadores.Count() > 0)
+        {
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <td>Identificación</td>
+                        <td>Nombre</td>
+                        <td>Tipo</td>
+                        <td>Dirección</td>
+                        <td>Teléfono</td>
+                        <td>Qué desea hacer?</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var pat in Model.listaPatrocinadores)
+                    {
+                        <tr>
+                            <td>@pat.Identificacion</td>
+                            <td>@pat.Nombre</td>
+                            <td>@pat.TipoPersona</td>
+                            <td>@pat.Direccion</td>
+                            <td>@pat.Telefono</td>
+                            <td>
+                                <a class="btn btn-outline-info" asp-page="EditarPatrocinador" asp-route-identPatrocinador="@pat.Identificacion">Editar</a>
+                                <a class="btn btn-outline-danger" asp-page="EliminarPatrocinador" asp-route-identPatrocinador="@pat.Identificacion">Eliminar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p class="lead">No hay Patrocinadores registrados!</p>
+        }
+    </div>
+</div>

@@ -1,0 +1,73 @@
+﻿@page
+@model EscenarioDeportivo.FrontEnd.Pages.VerDeportistasModel
+@{
+    ViewData["Title"]="Deportistas";
+}
+@if (TempData["mensajeCreado"] != null)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        @TempData["mensajeCreado"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+<div class="container">
+    <div class="row justify-content-center bg-light">
+        <div class="col-sm-6">
+            <h3>Deportistas</h3>
+        </div>
+        <div class="col-sm-6">
+            <a class="btn btn-secondary" asp-page="CrearDeportista">Agregar</a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        @if (Model._listaVistaDeportista.Count() > 0)
+        {
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <td>Documento</td>
+                        <td>Nombres</td>
+                        <td>Apellidos</td>
+                        <td>Género</td>
+                        <td>Rh</td>
+                        <td>EPS</td>
+                        <td data-type="date">Fecha de Nacimiento</td>
+                        <td>Disciplina Deportista</td>
+                        <td>Dirección</td>
+                        <td>Equipo</td>
+                        <td>Disciplina Equipo</td>
+                        <td>Qué desea hacer?</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var dep in Model._listaVistaDeportista)
+                    {
+                        <tr>
+                            <td>@dep.Documento</td>
+                            <td>@dep.Nombres</td>
+                            <td>@dep.Apellidos</td>
+                            <td>@dep.Genero</td>
+                            <td>@dep.Rh</td>
+                            <td>@dep.EPS</td>
+                            <td>@dep.FechaNacimiento</td>
+                            <td>@dep.Disciplina</td>
+                            <td>@dep.Direccion</td>
+                            <td>@dep.EquipoNombre</td>
+                            <td>@dep.EquipoDisciplina</td>
+                            <td>
+                                <a class="btn btn-outline-info" asp-page="EditarDeportista" asp-route-depDocumento="@dep.Documento">Editar</a>
+                                <a class="btn btn-outline-danger" asp-page="EliminarDeportista" asp-route-depDocumento="@dep.Documento">Eliminar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p class="lead">No hay Deportistas registrados!</p>
+        }
+    </div>
+</div>

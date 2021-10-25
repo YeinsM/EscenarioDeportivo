@@ -1,0 +1,36 @@
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\bin\Debug\net5.0\EscenarioDeportivo.Persistencia.deps.json
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\bin\Debug\net5.0\EscenarioDeportivo.Persistencia.runtimeconfig.json
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\bin\Debug\net5.0\EscenarioDeportivo.Persistencia.runtimeconfig.dev.json
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\bin\Debug\net5.0\EscenarioDeportivo.Persistencia.dll
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\bin\Debug\net5.0\ref\EscenarioDeportivo.Persistencia.dll
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\bin\Debug\net5.0\EscenarioDeportivo.Persistencia.pdb
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\bin\Debug\net5.0\EscenarioDeportivo.Dominio.dll
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\bin\Debug\net5.0\EscenarioDeportivo.Dominio.pdb
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.csprojAssemblyReference.cache
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.AssemblyInfoInputs.cache
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.AssemblyInfo.cs
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.csproj.CoreCompileInputs.cache
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.csproj.CopyComplete
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.dll
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\ref\EscenarioDeportivo.Persistencia.dll
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.pdb
+D:\Proyectos\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.genruntimeconfig.cache
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\bin\Debug\net5.0\EscenarioDeportivo.Persistencia.deps.json
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\bin\Debug\net5.0\EscenarioDeportivo.Persistencia.runtimeconfig.json
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\bin\Debug\net5.0\EscenarioDeportivo.Persistencia.runtimeconfig.dev.json
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\bin\Debug\net5.0\EscenarioDeportivo.Persistencia.dll
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\bin\Debug\net5.0\ref\EscenarioDeportivo.Persistencia.dll
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\bin\Debug\net5.0\EscenarioDeportivo.Persistencia.pdb
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\bin\Debug\net5.0\EscenarioDeportivo.Dominio.dll
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\bin\Debug\net5.0\EscenarioDeportivo.Dominio.pdb
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.csproj.AssemblyReference.cache
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.AssemblyInfoInputs.cache
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.AssemblyInfo.cs
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.csproj.CopyComplete
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.dll
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\ref\EscenarioDeportivo.Persistencia.dll
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.pdb
+C:\Users\yeins\Downloads\Telegram Desktop\EscenarioDeportivo\EscenarioDeportivo\EscenarioDeportivo.Persistencia\obj\Debug\net5.0\EscenarioDeportivo.Persistencia.genruntimeconfig.cache

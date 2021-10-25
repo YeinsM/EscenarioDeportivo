@@ -1,0 +1,71 @@
+﻿@page
+@model EscenarioDeportivo.FrontEnd.Pages.EditarEquipoModel
+@{
+    ViewData["Title"]="Editar Equipo";
+}
+<div class="row justify-content-center bg-light">
+    <div class="col-sm-12">
+        <h3>Editar Equipo</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <p class="text-warning">@ViewData["Mensaje"]</p>
+    </div>
+</div>
+<div class="form-horizontal">
+    <div class="row">
+        <div class="col-sm-10">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="_equipo.Id" />
+                <div class="form-group row">
+                    <label asp-for="_equipo.Nombre" class="col-sm-2 control-label"></label>
+                    <div class="col-sm-10">
+                        <input asp-for="_equipo.Nombre" class="form-control" />
+                        <span asp-validation-for="_equipo.Nombre" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="_equipo.CantidadDeportistas" class="col-sm-2 control-label"> </label>
+                    <div class="col-sm-10">
+                        <input asp-for="_equipo.CantidadDeportistas" class="form-control" />
+                        <span asp-validation-for="_equipo.CantidadDeportistas" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="_equipo.Disciplina" class="col-sm-2 control-label"></label>
+                    <div class="col-sm-10">
+                        <input asp-for="_equipo.Disciplina" class="form-control" />
+                        <span asp-validation-for="_equipo.Disciplina" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="_equipo.PatrocinadorId" class="col-sm-2 control-label"> </label>
+                    <div class="col-sm-10">
+                        <select asp-for="_equipo.PatrocinadorId" class="form-control">
+                            <option value="">Seleccionar el patrocinador</option>
+                            if (Model._listaPatrocinadores != null)
+                            {
+                                @foreach (var pat in Model._listaPatrocinadores)
+                                {
+                                    <option value="@pat.Id">@pat.Nombre</option>
+                                }
+                            }
+                        </select>
+                        <span asp-validation-for="_equipo.PatrocinadorId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Actualizar" class="btn btn-secondary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+@{
+await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}
